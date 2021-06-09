@@ -31,7 +31,7 @@ class Calculator {
                 int number2 = numberConverter.romanToInt(resultMatch.group(3));
                 char operand = resultMatch.group(2).charAt(0);
                 input.output(numberConverter.intToRoman(calculation.calculation(number1, number2, operand).intValue()));
-            } else throw new WrongInputException("Неверно введены данные!!!");
+            } else throw new WrongInputException("Bad Input!");
         }
     }
 }

@@ -50,6 +50,6 @@ public class NumberConverter {
             return 4 + romanToInt(romanNumber.substring(2));
         if (romanNumber.startsWith("I"))
             return 1 + romanToInt(romanNumber.substring(1));
-        throw new RuntimeException("Неверное значение");
+        throw new RuntimeException("Incorrect value");
     }
 }
